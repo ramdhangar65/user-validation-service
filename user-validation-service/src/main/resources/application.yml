@@ -1,0 +1,34 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: VALIDATION-SERVICE
+    # Database configuration
+  data:
+    mongodb:
+      uri:  mongodb://localhost:27017/
+      database: mongoDB-dev
+  config:
+    import: optional:configserver:http://localhost:8888
+
+#logging:
+logging:
+    file:
+      name: C:/Users/ramlal.dhangar/Training-Project/application-Logs/logs/payment-service.log
+
+#    logging:
+#      file.name: C:/Users/ramlal.dhangar/Training-Project/application-Logs/payment-service.log
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/training-project-2024
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    username: root
+#    password: root
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+#    properties:
+#      hibernate:
+#      format_sql: true
+#    database: MYSQL
+#    database-platform: org.hibernate.dialect.MySQLDialect
